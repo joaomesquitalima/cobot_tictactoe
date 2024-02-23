@@ -1,8 +1,11 @@
+#jogo da velha
 branco = " "
 token = ["X","O"]
 
 
 def criarBoard(lista):
+    
+
     for i in range(len(lista)):
         if lista[i] == True:
             lista[i] = "X"
@@ -10,7 +13,6 @@ def criarBoard(lista):
             lista[i] = "O"
         else:
             lista[i] = " "
-
 
     board = [
             [lista[0],lista[1],lista[2]],
@@ -27,34 +29,8 @@ def printBoard(board):
         if i <2:
             print('------')
 
-
-
-def getInputValido(mensagem):
-
-    try:
-        n = int(input(mensagem))
-        if n>3 or n<1:
-            print("Erro")
-            return getInputValido(mensagem)
-        return n-1
-        
             
-    except:
-        print("Insira uma entrada valida")
-        getInputValido(mensagem)
 
-   
-
-
-def enserirValor(board,i,j,jogador):
-    if board[i][j] == " ":
-        board[i][j] = token[jogador]
-
-    else:
-        print("Lugar ocupado")
-        return False , board
-    
-    return True ,board
 
 
 def verificaGanhador(board):
@@ -80,3 +56,8 @@ def verificaGanhador(board):
             
 
     return "EMPATE"
+
+
+
+
+
