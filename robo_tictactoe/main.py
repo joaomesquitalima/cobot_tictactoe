@@ -59,7 +59,7 @@ while True:
     print('Tabuleiro:', lista)
     board = criarBoard(lista)
     # printBoard(board)
-    ganhador = verificaGanhador(board)
+   
 
     # if ganhador:
     #     #altera status do jogo
@@ -67,7 +67,8 @@ while True:
         
     #devolve linha i e coluna j do board
     i,j = movimentoIA(board,jogador)
-
+    board[i][j] = "O"
+    ganhador = verificaGanhador(board)
     #usa a linha e coluna pra devolver um numero que representa um ponto pro robo
     pos = movimentoRobo(i,j)
     
