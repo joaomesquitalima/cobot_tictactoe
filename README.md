@@ -1,5 +1,5 @@
 # Jogo da Velha Robótico
-![Jogo da Velha Robótico](IMG_20250430_123126140.jpg)
+<img src="IMG_20250430_123126140.jpg" alt="Jogo da Velha Robótico" width="300"/>
 
 Este projeto implementa um jogo da velha onde um robô colaborativo joga contra um jogador humano. O robô utiliza o protocolo Modbus TCP para se comunicar com um dispositivo físico que representa o tabuleiro do jogo. O jogador humano interage com o robô pressionando um botão físico para indicar sua jogada.
 
